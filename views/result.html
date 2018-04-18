@@ -1,0 +1,39 @@
+<div class="show container" ng-show="url.Title">
+  <div class="poster">
+    <img ng-src="{{ url.Poster == 'Inget hittat' ? './images/image_not_found.png' : url.Poster }}">
+    <p class="text-dark">{{ post }}</p>
+  </div>
+  <h2 class="text-dark">{{ url.Title | uppercase}}</h2>
+  <div class="movie-info">
+    <p class="text-dark">
+      <strong>Från:</strong> {{ url.Year }}</p>
+    <p class="text-dark">
+      <strong>Rating:</strong> {{ url.Rated }}</p>
+    <p class="text-dark">
+      <strong>Utgiven:</strong> {{ url.Released }}</p>
+    <p class="text-dark">
+      <strong>Längd:</strong> {{ url.Runtime }}</p>
+  </div>
+  <p class="text-dark">
+    <strong>Skådespelare:</strong> {{ url.Actors }}</p>
+  <p class="text-dark">
+    <strong>Regissör:</strong> {{ url.Director }}</p>
+  <p class="text-dark">
+    <strong>Utmärkelser:</strong> {{ url.Awards }}</p>
+  <p class="text-dark">
+    <strong>Handling: </strong> {{ url.Plot }}</p>
+  <h4 class="text-dark">
+    <strong>Utmärkelser</strong>
+  </h4>
+  <p class="text-dark ">{{ rate }}</p>
+  <div ng-repeat="rating in url.Ratings | orderBy: '-Value'">
+    <p class="text-dark">
+      <strong>{{ rating.Source + ': ' + rating.Value }}</strong>
+    </p>
+  </div>
+
+  <!-- kör funktionen backToHome() i min resultController för att ta mig tillbaka till startsidan -->
+  <button ng-click="backToHome()" class="btn btn-info">Tillbaka till söksidan</button>
+  
+
+</div>

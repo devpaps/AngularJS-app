@@ -1,0 +1,20 @@
+{
+  "short_name": "Filmtipset",
+  "name": "Filmtipset",
+  "icons": [
+    {
+      "src": "./favicon/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./favicon/favicon-196x196.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "http://webbkurs.ei.hv.se/~lajo0010/webbapp/index.html",
+  "background_color": "#2196F3",
+  "display": "standalone",
+  "orientation": "portrait"
+}

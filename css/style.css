@@ -1,0 +1,42 @@
+html, body {
+  width : 100%;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.bg-image {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  filter: brightness(50%);
+}
+
+.show {
+  margin: 5rem 0;
+}
+
+.show img {
+  padding-bottom: 2rem;
+}
+
+@media screen and (orientation: landscape) {
+  .main {
+    margin-top: 5rem;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+ }

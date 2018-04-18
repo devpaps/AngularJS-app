@@ -1,0 +1,26 @@
+<section class="text-white">
+  <img src="./images/background.jpg" alt="Bild på poster från Frankenstein filmen" class="bg-image">
+  <div class="main container align-middle">
+    <div class="row text-center justify-content-center section-intro">
+      <div class="col-6 mb-5">
+        <h1>Filmtipset</h1>
+        <h5>Sök efter dina favortfilmer</h5>
+      </div>
+    </div>
+
+    <form name="form" ng-submit="search()" novalidate autocomplete="off">
+      <div class="inputSearch mx-auto">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="form-group">
+
+              <input class="form-control" type="text" ng-model="movieTitle" id="filmName" placeholder="Ex. Armageddon" autofocus required>
+              <span ng-show="!movieTitle.length">Ange en film!</span>
+            </div>
+
+            <input type="submit" class="btn btn-primary btn-lg btn-block btn-info mt-5" ng-disabled="!movieTitle">
+
+          </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,25 @@
+CACHE MANIFEST
+
+#version 1.0 4-11-2018
+
+CACHE:
+
+#images
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/images/background.jpg
+
+#internal HTML documents
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/
+
+#style sheets
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/css/bootstrap.min.css
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/css/reboot.css
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/css/style.css
+
+
+#javascript files
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/lib/angular/angular.min.js
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/lib/angular/angular-route.min.js
+http://webbkurs.ei.hv.se/~lajo0010/webbapp/js/app.js
+
+NETWORK:
+*
